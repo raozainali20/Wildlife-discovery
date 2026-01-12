@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="British Wildlife Centre - Learn about native UK wildlife and conservation efforts">
+    <meta name="theme-color" content="#2d5016">
+    
+    <title>Home - British Wildlife Centre</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/icons/favicon.png">
+    <link rel="apple-touch-icon" href="images/icons/icon-192.png">
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="images/logo.svg" alt="British Wildlife Centre Logo" class="logo-img">
+                    <h1 class="site-title">British Wildlife Centre</h1>
+                </div>
+                
+                <div class="header-actions">
+                    <!-- Theme Toggle -->
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                        <span class="theme-icon theme-icon-light">☀️</span>
+                        <span class="theme-icon theme-icon-dark">🌙</span>
+                    </button>
+                    
+                    <!-- Network Status -->
+                    <div class="network-status" id="networkStatus">
+                        <span class="status-indicator"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Navigation (Desktop/Tablet) -->
+    <nav class="main-nav" id="mainNav">
+        <div class="container">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active" aria-current="page">
+                        <span class="nav-icon">🏠</span>
+                        <span class="nav-text">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="animals.html" class="nav-link">
+                        <span class="nav-icon">🦊</span>
+                        <span class="nav-text">Animals</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="map.html" class="nav-link">
+                        <span class="nav-icon">🗺️</span>
+                        <span class="nav-text">Map</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="tips.html" class="nav-link">
+                        <span class="nav-icon">💡</span>
+                        <span class="nav-text">Tips</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="favourites.html" class="nav-link">
+                        <span class="nav-icon">⭐</span>
+                        <span class="nav-text">Favourites</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-image">
+                <img src="images/hero-wildlife.jpg" alt="British wildlife in natural habitat" loading="lazy">
+            </div>
+            <div class="hero-content container">
+                <h2 class="hero-title">Protecting British Wildlife</h2>
+                <p class="hero-subtitle">Discover, Learn, and Help Conserve Our Native Species</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section section">
+            <div class="container">
+                <h2 class="section-title">Welcome to the British Wildlife Centre</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>The British Wildlife Centre is dedicated to the conservation and protection of native UK wildlife. We provide a safe haven for animals in need while educating visitors about the importance of preserving our natural heritage.</p>
+                        
+                        <p>From the iconic red fox to the endangered water vole, Britain is home to an incredible diversity of wildlife. Many of these species face challenges from habitat loss, climate change, and human activity. Our mission is to protect these animals and their habitats for future generations.</p>
+                        
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <span class="stat-number">12+</span>
+                                <span class="stat-label">Native Species</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Animals in Care</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">1000+</span>
+                                <span class="stat-label">Visitors Annually</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-image">
+                        <img src="images/conservation-work.jpg" alt="Conservation team working with wildlife" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conservation Efforts -->
+        <section class="conservation-section section bg-light">
+            <div class="container">
+                <h2 class="section-title">Our Conservation Work</h2>
+                <div class="conservation-grid">
+                    <article class="conservation-card">
+                        <div class="card-icon">🌳</div>
+                        <h3 class="card-title">Habitat Restoration</h3>
+                        <p class="card-text">We work to restore and maintain natural habitats including woodlands, wetlands, and meadows to provide safe homes for British wildlife.</p>
+                    </article>
+                    
+                    <article class="conservation-card">
+                        <div class="card-icon">🏥</div>
+                        <h3 class="card-title">Rescue & Rehabilitation</h3>
+                        <p class="card-text">Our wildlife hospital treats injured and orphaned animals, preparing them for release back into the wild whenever possible.</p>
+                    </article>
+                    
+                    <article class="conservation-card">
+                        <div class="card-icon">📚</div>
+                        <h3 class="card-title">Education Programs</h3>
+                        <p class="card-text">We offer educational workshops, school visits, and family events to inspire the next generation of wildlife conservationists.</p>
+                    </article>
+                    
+                    <article class="conservation-card">
+                        <div class="card-icon">🔬</div>
+                        <h3 class="card-title">Research & Monitoring</h3>
+                        <p class="card-text">Our team conducts vital research on British wildlife populations, tracking trends and developing conservation strategies.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Animals -->
+        <section class="featured-section section">
+            <div class="container">
+                <h2 class="section-title">Featured Animals</h2>
+                <p class="section-subtitle">Meet some of our resident British wildlife</p>
+                <div class="featured-grid" id="featuredAnimals">
+                    <!-- Populated by JavaScript -->
+                </div>
+                <div class="section-cta">
+                    <a href="animals.html" class="btn btn-primary">View All Animals</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Events -->
+        <section class="events-section section bg-light">
+            <div class="container">
+                <h2 class="section-title">Upcoming Events</h2>
+                <div class="events-grid" id="upcomingEvents">
+                    <!-- Populated by JavaScript -->
+                </div>
+                <div class="section-cta">
+                    <a href="#events" class="btn btn-secondary">View All Events</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Help Us Protect British Wildlife</h2>
+                    <p class="cta-text">Your support helps us continue our vital conservation work. Every contribution makes a difference.</p>
+                    <div class="cta-buttons">
+                        <a href="#donate" class="btn btn-primary btn-lg">Donate Now</a>
+                        <a href="#volunteer" class="btn btn-outline btn-lg">Become a Volunteer</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">British Wildlife Centre</h3>
+                    <p>Dedicated to protecting and conserving Britain's native wildlife.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="animals.html">Animals</a></li>
+                        <li><a href="map.html">Map</a></li>
+                        <li><a href="tips.html">Tips</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact</h3>
+                    <ul class="footer-links">
+                        <li>📧 info@wildlifecentre.uk</li>
+                        <li>📞 01234 567890</li>
+                        <li>📍 Wildlife Centre, UK</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 British Wildlife Centre. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bottom Navigation (Mobile) -->
+    <nav class="bottom-nav" id="bottomNav">
+        <a href="index.html" class="bottom-nav-item active" aria-current="page">
+            <span class="nav-icon">🏠</span>
+            <span class="nav-label">Home</span>
+        </a>
+        <a href="animals.html" class="bottom-nav-item">
+            <span class="nav-icon">🦊</span>
+            <span class="nav-label">Animals</span>
+        </a>
+        <a href="map.html" class="bottom-nav-item">
+            <span class="nav-icon">🗺️</span>
+            <span class="nav-label">Map</span>
+        </a>
+        <a href="tips.html" class="bottom-nav-item">
+            <span class="nav-icon">💡</span>
+            <span class="nav-label">Tips</span>
+        </a>
+        <a href="favourites.html" class="bottom-nav-item">
+            <span class="nav-icon">⭐</span>
+            <span class="nav-label">Faves</span>
+        </a>
+    </nav>
+
+    <!-- Scripts -->
+    <script src="js/app.js" type="module"></script>
+    <script src="js/theme.js" type="module"></script>
+    <script src="js/network-status.js" type="module"></script>
+    <script src="js/home.js" type="module"></script>
+</body>
+</html>

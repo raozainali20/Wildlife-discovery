@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your favourite wildlife animals from the British Wildlife Centre">
+  <meta name="theme-color" content="#2d5016">
+  
+  <title>My Favourites - British Wildlife Centre</title>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/favourites.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <img src="images/logo.svg" alt="British Wildlife Centre Logo" class="logo-img">
+          <h1 class="site-title">British Wildlife Centre</h1>
+        </div>
+        
+        <div class="header-actions">
+          <!-- Theme Toggle -->
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+            <span class="theme-icon theme-icon-light">☀️</span>
+            <span class="theme-icon theme-icon-dark">🌙</span>
+          </button>
+          
+          <!-- Network Status -->
+          <div class="network-status" id="networkStatus">
+            <span class="status-indicator"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Navigation (Desktop/Tablet) -->
+  <nav class="main-nav" id="mainNav">
+    <div class="container">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">
+            <span class="nav-icon">🏠</span>
+            <span class="nav-text">Home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="animals.html" class="nav-link">
+            <span class="nav-icon">🦊</span>
+            <span class="nav-text">Animals</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="map.html" class="nav-link">
+            <span class="nav-icon">🗺️</span>
+            <span class="nav-text">Map</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="tips.html" class="nav-link">
+            <span class="nav-icon">💡</span>
+            <span class="nav-text">Tips</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="favourites.html" class="nav-link active" aria-current="page">
+            <span class="nav-icon">⭐</span>
+            <span class="nav-text">Favourites</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="favourites-page">
+    <!-- Page Header -->
+    <section class="favourites-header">
+      <div class="container">
+        <h1>❤️ My Favourite Animals</h1>
+        <p class="favourites-subtitle">Animals you've saved to your collection</p>
+      </div>
+    </section>
+
+    <!-- Favourites Content -->
+    <section class="favourites-content">
+      <div class="container">
+        <!-- Stats Bar -->
+        <div class="favourites-stats">
+          <div class="stat">
+            <span class="stat-number" id="favouritesCount">0</span>
+            <span class="stat-label">Favourites</span>
+          </div>
+          <button id="clearAllBtn" class="btn btn-outline-danger">
+            Clear All
+          </button>
+        </div>
+
+        <!-- Empty State -->
+        <div id="emptyState" class="empty-state">
+          <div class="empty-icon">💔</div>
+          <h2>No Favourites Yet</h2>
+          <p>Start adding animals to your favourites by clicking the heart icon on any animal card!</p>
+          <a href="animals.html" class="btn btn-primary">Browse Animals</a>
+        </div>
+
+        <!-- Favourites Grid -->
+        <div id="favouritesGrid" class="favourites-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>British Wildlife Centre</h3>
+          <p>Dedicated to conservation and education about British wildlife.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="animals.html">Animals</a></li>
+            <li><a href="map.html">Map</a></li>
+            <li><a href="tips.html">Tips</a></li>
+            <li><a href="favourites.html">Favourites</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p>Email: info@britishwildlife.co.uk</p>
+          <p>Phone: 01234 567890</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 British Wildlife Centre. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Bottom Navigation -->
+  <nav class="bottom-nav" id="bottomNav">
+    <a href="index.html" class="bottom-nav-item">
+      <span class="nav-icon">🏠</span>
+      <span class="nav-label">Home</span>
+    </a>
+    <a href="animals.html" class="bottom-nav-item">
+      <span class="nav-icon">🦊</span>
+      <span class="nav-label">Animals</span>
+    </a>
+    <a href="map.html" class="bottom-nav-item">
+      <span class="nav-icon">🗺️</span>
+      <span class="nav-label">Map</span>
+    </a>
+    <a href="tips.html" class="bottom-nav-item">
+      <span class="nav-icon">💡</span>
+      <span class="nav-label">Tips</span>
+    </a>
+    <a href="favourites.html" class="bottom-nav-item active">
+      <span class="nav-icon">⭐</span>
+      <span class="nav-label">Faves</span>
+    </a>
+  </nav>
+
+  <!-- JavaScript Modules -->
+  <script type="module" src="js/app.js"></script>
+  <script type="module" src="js/theme.js"></script>
+  <script type="module" src="js/network-status.js"></script>
+  <script type="module" src="js/favourites-page.js"></script>
+</body>
+</html>

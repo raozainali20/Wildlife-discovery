@@ -1,0 +1,269 @@
+/* ========================================
+   TIPS PAGE STYLES - CHILD-FRIENDLY DESIGN
+   ======================================== */
+
+.tips-page {
+  background: linear-gradient(to bottom, #e8f5e9 0%, #ffffff 100%);
+}
+
+/* Hero Section */
+.tips-hero {
+  background: linear-gradient(135deg, #ff9800 0%, #ffb74d 100%);
+  padding: var(--spacing-3xl) 0;
+  text-align: center;
+  border-bottom: 5px solid #f57c00;
+}
+
+.tips-hero-title {
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  margin-bottom: var(--spacing-md);
+  animation: bounce 1s ease infinite alternate;
+}
+
+.tips-hero-subtitle {
+  font-size: 1.5rem;
+  color: white;
+  margin: 0;
+  opacity: 0.95;
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-10px); }
+}
+
+/* Tips Grid */
+.tips-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+}
+
+/* Tip Card - Big and Colorful */
+.tip-card {
+  background: white;
+  padding: var(--spacing-2xl);
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 4px solid #4caf50;
+  position: relative;
+  overflow: hidden;
+}
+
+.tip-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, #ff9800, #4caf50, #2196f3, #9c27b0);
+}
+
+.tip-card:hover {
+  transform: scale(1.05) rotate(1deg);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+.tip-icon {
+  font-size: 5rem;
+  margin-bottom: var(--spacing-lg);
+  animation: wiggle 2s ease infinite;
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-10deg); }
+  75% { transform: rotate(10deg); }
+}
+
+.tip-title {
+  font-size: 1.75rem;
+  color: #2d5016;
+  margin-bottom: var(--spacing-md);
+  font-weight: bold;
+}
+
+.tip-text {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Tip Button - Big and Fun */
+.tip-btn {
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #4caf50, #8bc34a);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.tip-btn:hover {
+  background: linear-gradient(135deg, #66bb6a, #9ccc65);
+  transform: scale(1.1);
+}
+
+.tip-btn.completed {
+  background: linear-gradient(135deg, #ff9800, #ffb74d);
+}
+
+.tip-actions {
+  margin-top: var(--spacing-md);
+}
+
+/* Fun Activities */
+.activities-section {
+  background: linear-gradient(135deg, #2196f3 0%, #64b5f6 100%);
+  padding: var(--spacing-3xl) 0;
+}
+
+.section-title-fun {
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.activities-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+}
+
+.activity-card {
+  background: white;
+  padding: var(--spacing-xl);
+  border-radius: 20px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.activity-card:hover {
+  transform: translateY(-8px);
+}
+
+.activity-number {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #ff9800, #ffb74d);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: var(--spacing-md);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.activity-card h3 {
+  font-size: 1.5rem;
+  color: #2d5016;
+  margin-bottom: var(--spacing-sm);
+}
+
+.activity-card p {
+  font-size: 1.125rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Achievement Section */
+.achievement-section {
+  background: linear-gradient(135deg, #9c27b0 0%, #ba68c8 100%);
+  padding: var(--spacing-3xl) 0;
+  text-align: center;
+}
+
+.achievement-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.achievement-badge {
+  font-size: 6rem;
+  margin-bottom: var(--spacing-lg);
+  animation: rotate 3s ease infinite;
+}
+
+@keyframes rotate {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(360deg) scale(1.2); }
+}
+
+.achievement-content h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: var(--spacing-md);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.achievement-content p {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: var(--spacing-lg);
+  opacity: 0.95;
+}
+
+.achievement-stars {
+  font-size: 3rem;
+  animation: sparkle 1.5s ease infinite;
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.1); }
+}
+
+/* Responsive Design */
+@media (min-width: 640px) {
+  .tips-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .activities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .tips-hero-title {
+    font-size: 3.5rem;
+  }
+  
+  .tips-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .activities-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Print Styles */
+@media print {
+  .tip-btn {
+    background: #4caf50 !important;
+  }
+  
+  .achievement-section {
+    page-break-before: always;
+  }
+}

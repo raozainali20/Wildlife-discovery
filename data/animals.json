@@ -1,0 +1,206 @@
+[
+  {
+    "id": 1,
+    "name": "Red Fox",
+    "scientificName": "Vulpes vulpes",
+    "image": "images/animals/red-fox.jpg",
+    "description": "The red fox is Britain's most widespread wild carnivore. These clever animals are highly adaptable and can be found in forests, farmland, and even urban areas.",
+    "habitat": "Woodlands, farmland, urban areas",
+    "diet": "Omnivore - rabbits, birds, insects, berries, and scraps",
+    "conservationStatus": "Least Concern",
+    "funFact": "Foxes have excellent hearing and can locate prey under the snow!",
+    "location": {
+      "lat": 51.5074,
+      "lng": -0.1278,
+      "area": "Throughout UK"
+    },
+    "endangeredLevel": "low"
+  },
+  {
+    "id": 2,
+    "name": "European Badger",
+    "scientificName": "Meles meles",
+    "image": "images/animals/badger.jpg",
+    "description": "Badgers are nocturnal mammals known for their distinctive black and white striped face. They live in underground tunnel systems called setts.",
+    "habitat": "Woodlands, farmland with nearby woods",
+    "diet": "Omnivore - earthworms, insects, small mammals, fruits",
+    "conservationStatus": "Least Concern",
+    "funFact": "A badger sett can be over 100 years old and have 50+ entrances!",
+    "location": {
+      "lat": 52.4862,
+      "lng": -1.8904,
+      "area": "England, Wales, Scotland"
+    },
+    "endangeredLevel": "low"
+  },
+  {
+    "id": 3,
+    "name": "Red Squirrel",
+    "scientificName": "Sciurus vulgaris",
+    "image": "images/animals/red-squirrel.jpg",
+    "description": "The red squirrel is Britain's native squirrel species. They have beautiful reddish-brown fur and distinctive ear tufts.",
+    "habitat": "Coniferous and broadleaved woodlands",
+    "diet": "Seeds, nuts, berries, fungi",
+    "conservationStatus": "Near Threatened in UK",
+    "funFact": "Red squirrels can find buried nuts using their incredible sense of smell!",
+    "location": {
+      "lat": 54.9783,
+      "lng": -1.6178,
+      "area": "Scotland, Northern England, Wales, Isle of Wight"
+    },
+    "endangeredLevel": "medium"
+  },
+  {
+    "id": 4,
+    "name": "Hedgehog",
+    "scientificName": "Erinaceus europaeus",
+    "image": "images/animals/hedgehog.jpg",
+    "description": "The European hedgehog is a beloved British mammal covered in around 6,000 spines. They curl into a ball when threatened.",
+    "habitat": "Gardens, hedgerows, woodland edges",
+    "diet": "Insects, slugs, snails, worms",
+    "conservationStatus": "Vulnerable in UK",
+    "funFact": "Hedgehogs can travel up to 2 miles in a single night searching for food!",
+    "location": {
+      "lat": 51.7520,
+      "lng": -1.2577,
+      "area": "Throughout England, Wales, Scotland"
+    },
+    "endangeredLevel": "high"
+  },
+  {
+    "id": 5,
+    "name": "Otter",
+    "scientificName": "Lutra lutra",
+    "image": "images/animals/otter.jpg",
+    "description": "The Eurasian otter is a semi-aquatic mammal that was once rare in Britain but has made a remarkable recovery thanks to conservation efforts.",
+    "habitat": "Rivers, lakes, coastal areas",
+    "diet": "Fish, crustaceans, amphibians",
+    "conservationStatus": "Near Threatened",
+    "funFact": "Otters have the densest fur of any mammal - up to 1 million hairs per square inch!",
+    "location": {
+      "lat": 56.4907,
+      "lng": -4.2026,
+      "area": "Scotland, Wales, parts of England"
+    },
+    "endangeredLevel": "medium"
+  },
+  {
+    "id": 6,
+    "name": "Common Seal",
+    "scientificName": "Phoca vitulina",
+    "image": "images/animals/seal.jpg",
+    "description": "Common seals, also called harbour seals, are found around British coasts. They have dog-like faces and spotted grey-brown coats.",
+    "habitat": "Coastal waters, estuaries, sandy shores",
+    "diet": "Fish, squid, crustaceans",
+    "conservationStatus": "Least Concern",
+    "funFact": "Seals can hold their breath for up to 30 minutes underwater!",
+    "location": {
+      "lat": 52.9548,
+      "lng": 1.1581,
+      "area": "East coast of England, Scotland"
+    },
+    "endangeredLevel": "low"
+  },
+  {
+    "id": 7,
+    "name": "Red Deer",
+    "scientificName": "Cervus elaphus",
+    "image": "images/animals/red-deer.jpg",
+    "description": "The red deer is Britain's largest land mammal. Male deer (stags) grow impressive antlers that can span over a metre.",
+    "habitat": "Moorlands, woodlands, mountains",
+    "diet": "Grasses, heather, tree shoots, bark",
+    "conservationStatus": "Least Concern",
+    "funFact": "A stag's antlers can grow up to 2.5cm per day - the fastest growing tissue in any mammal!",
+    "location": {
+      "lat": 57.4596,
+      "lng": -4.2244,
+      "area": "Scottish Highlands, Lake District, Exmoor"
+    },
+    "endangeredLevel": "low"
+  },
+  {
+    "id": 8,
+    "name": "Puffin",
+    "scientificName": "Fratercula arctica",
+    "image": "images/animals/puffin.jpg",
+    "description": "Atlantic puffins are charismatic seabirds with colourful beaks. They nest in burrows on clifftops and are excellent swimmers.",
+    "habitat": "Coastal cliffs, open ocean",
+    "diet": "Small fish, especially sand eels",
+    "conservationStatus": "Vulnerable",
+    "funFact": "Puffins can carry up to 60 fish in their beaks at once!",
+    "location": {
+      "lat": 55.6333,
+      "lng": -1.6333,
+      "area": "Farne Islands, Skomer, Shetland"
+    },
+    "endangeredLevel": "high"
+  },
+  {
+    "id": 9,
+    "name": "Barn Owl",
+    "scientificName": "Tyto alba",
+    "image": "images/animals/barn-owl.jpg",
+    "description": "The barn owl is a beautiful nocturnal bird with a heart-shaped face and silent flight. They are excellent hunters of small mammals.",
+    "habitat": "Farmland, grasslands, woodland edges",
+    "diet": "Mice, voles, shrews",
+    "conservationStatus": "Least Concern",
+    "funFact": "Barn owls can locate prey in complete darkness using only their hearing!",
+    "location": {
+      "lat": 52.2053,
+      "lng": 0.1218,
+      "area": "Throughout lowland Britain"
+    },
+    "endangeredLevel": "medium"
+  },
+  {
+    "id": 10,
+    "name": "Water Vole",
+    "scientificName": "Arvicola amphibius",
+    "image": "images/animals/water-vole.jpg",
+    "description": "The water vole, often called 'Ratty' from Wind in the Willows, is Britain's fastest declining mammal. Conservation efforts are vital.",
+    "habitat": "River banks, streams, marshes",
+    "diet": "Grasses, reeds, roots, fruits",
+    "conservationStatus": "Endangered in UK",
+    "funFact": "Water voles dig extensive burrow systems with underwater entrances for safety!",
+    "location": {
+      "lat": 51.4545,
+      "lng": -2.5879,
+      "area": "Scattered populations across Britain"
+    },
+    "endangeredLevel": "high"
+  },
+  {
+    "id": 11,
+    "name": "Kingfisher",
+    "scientificName": "Alcedo atthis",
+    "image": "images/animals/kingfisher.jpg",
+    "description": "The kingfisher is one of Britain's most colourful birds with brilliant blue and orange plumage. They dive into water to catch fish.",
+    "habitat": "Rivers, streams, lakes",
+    "diet": "Small fish, aquatic insects",
+    "conservationStatus": "Amber List",
+    "funFact": "Kingfishers can dive at speeds up to 25 mph to catch their prey!",
+    "location": {
+      "lat": 51.3811,
+      "lng": -2.3590,
+      "area": "Throughout England and Wales"
+    },
+    "endangeredLevel": "medium"
+  },
+  {
+    "id": 12,
+    "name": "Pine Marten",
+    "scientificName": "Martes martes",
+    "image": "images/animals/pine-marten.jpg",
+    "description": "The pine marten is a cat-sized member of the weasel family. Once nearly extinct in Britain, they are slowly recovering in Scotland.",
+    "habitat": "Coniferous and mixed woodlands",
+    "diet": "Small mammals, birds, eggs, berries",
+    "conservationStatus": "Recovering",
+    "funFact": "Pine martens are excellent climbers and can jump 4 metres between trees!",
+    "location": {
+      "lat": 56.8166,
+      "lng": -5.1052,
+      "area": "Scottish Highlands, parts of Wales"
+    },
+    "endangeredLevel": "medium"
+  }
+]

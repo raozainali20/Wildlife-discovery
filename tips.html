@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wildlife tips for children - learn about British animals">
+    <meta name="theme-color" content="#2d5016">
+    
+    <title>Wildlife Tips for Kids - British Wildlife Centre</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/icons/favicon.png">
+    <link rel="apple-touch-icon" href="images/icons/icon-192.png">
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/tips.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="images/logo.svg" alt="British Wildlife Centre Logo" class="logo-img">
+                    <h1 class="site-title">British Wildlife Centre</h1>
+                </div>
+                
+                <div class="header-actions">
+                    <!-- Theme Toggle -->
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                        <span class="theme-icon theme-icon-light">☀️</span>
+                        <span class="theme-icon theme-icon-dark">🌙</span>
+                    </button>
+                    
+                    <!-- Network Status -->
+                    <div class="network-status" id="networkStatus">
+                        <span class="status-indicator"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Navigation (Desktop/Tablet) -->
+    <nav class="main-nav" id="mainNav">
+        <div class="container">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <span class="nav-icon">🏠</span>
+                        <span class="nav-text">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="animals.html" class="nav-link">
+                        <span class="nav-icon">🦊</span>
+                        <span class="nav-text">Animals</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="map.html" class="nav-link">
+                        <span class="nav-icon">🗺️</span>
+                        <span class="nav-text">Map</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="tips.html" class="nav-link active" aria-current="page">
+                        <span class="nav-icon">💡</span>
+                        <span class="nav-text">Tips</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="favourites.html" class="nav-link">
+                        <span class="nav-icon">⭐</span>
+                        <span class="nav-text">Favourites</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content tips-page">
+        <!-- Hero Section -->
+        <section class="tips-hero">
+            <div class="container">
+                <h1 class="tips-hero-title">🌟 Wildlife Tips for Kids! 🌟</h1>
+                <p class="tips-hero-subtitle">Learn how to help and protect British animals</p>
+            </div>
+        </section>
+
+        <!-- Tips Grid -->
+        <section class="tips-section section">
+            <div class="container">
+                <div class="tips-grid">
+                    <!-- Tip 1 -->
+                    <div class="tip-card">
+                        <div class="tip-icon">🦔</div>
+                        <h2 class="tip-title">Help Hedgehogs!</h2>
+                        <p class="tip-text">Leave a small hole in your garden fence so hedgehogs can walk through. They travel far at night looking for food!</p>
+                        <div class="tip-actions">
+                            <button class="tip-btn">I did this! ✓</button>
+                        </div>
+                    </div>
+
+                    <!-- Tip 2 -->
+                    <div class="tip-card">
+                        <div class="tip-icon">🐦</div>
+                        <h2 class="tip-title">Feed the Birds</h2>
+                        <p class="tip-text">Put bird food in your garden. Birds love seeds, nuts, and suet. Don't forget to give them fresh water too!</p>
+                        <div class="tip-actions">
+                            <button class="tip-btn">I did this! ✓</button>
+                        </div>
+                    </div>
+
+                    <!-- Tip 3 -->
+                    <div class="tip-card">
+                        <div class="tip-icon">🐝</div>
+                        <h2 class="tip-title">Plant Flowers</h2>
+                        <p class="tip-text">Grow wildflowers to help bees and butterflies. They need nectar to eat and make honey!</p>
+                        <div class="tip-actions">
+                            <button class="tip-btn">I did this! ✓</button>
+                        </div>
+                    </div>
+
+                    <!-- Tip 4 -->
+                    <div class="tip-card">
+                        <div class="tip-icon">🌳</div>
+                        <h2 class="tip-title">Build a Bug Hotel</h2>
+                        <p class="tip-text">Stack sticks, leaves, and logs to make a home for insects. Bugs are important for nature!</p>
+                        <div class="tip-actions">
+                            <button class="tip-btn">I did this! ✓</button>
+                        </div>
+                    </div>
+
+                    <!-- Tip 5 -->
+                    <div class="tip-card">
+                        <div class="tip-icon">🗑️</div>
+                        <h2 class="tip-title">Pick Up Litter</h2>
+                        <p class="tip-text">Always put rubbish in the bin. Litter can hurt animals. Keep nature clean and beautiful!</p>
+                        <div class="tip-actions">
+                            <button class="tip-btn">I did this! ✓</button>
+                        </div>
+                    </div>
+
+                    <!-- Tip 6 -->
+                    <div class="tip-card">
+                        <div class="tip-icon">👀</div>
+                        <h2 class="tip-title">Watch Quietly</h2>
+                        <p class="tip-text">When you see wild animals, stay quiet and still. Don't chase them or touch them. Just watch and enjoy!</p>
+                        <div class="tip-actions">
+                            <button class="tip-btn">I did this! ✓</button>
+                        </div>
+                    </div>
+
+                    <!-- Tip 7 -->
+                    <div class="tip-card">
+                        <div class="tip-icon">💧</div>
+                        <h2 class="tip-title">Save Water</h2>
+                        <p class="tip-text">Turn off taps when brushing teeth. Animals need clean water to drink. Every drop counts!</p>
+                        <div class="tip-actions">
+                            <button class="tip-btn">I did this! ✓</button>
+                        </div>
+                    </div>
+
+                    <!-- Tip 8 -->
+                    <div class="tip-card">
+                        <div class="tip-icon">📚</div>
+                        <h2 class="tip-title">Learn & Share</h2>
+                        <p class="tip-text">Read books about animals. Tell your friends what you learn. Knowledge helps protect wildlife!</p>
+                        <div class="tip-actions">
+                            <button class="tip-btn">I did this! ✓</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fun Activities -->
+        <section class="activities-section section">
+            <div class="container">
+                <h2 class="section-title-fun">🎨 Fun Activities 🎨</h2>
+                
+                <div class="activities-grid">
+                    <div class="activity-card">
+                        <div class="activity-number">1</div>
+                        <h3>Draw Your Favourite Animal</h3>
+                        <p>Use colours and make it beautiful!</p>
+                    </div>
+                    
+                    <div class="activity-card">
+                        <div class="activity-number">2</div>
+                        <h3>Go on a Nature Walk</h3>
+                        <p>Count how many different animals you see!</p>
+                    </div>
+                    
+                    <div class="activity-card">
+                        <div class="activity-number">3</div>
+                        <h3>Make Animal Sounds</h3>
+                        <p>Can you sound like a fox or an owl?</p>
+                    </div>
+                    
+                    <div class="activity-card">
+                        <div class="activity-number">4</div>
+                        <h3>Create a Wildlife Diary</h3>
+                        <p>Write about animals you see each day!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievement Banner -->
+        <section class="achievement-section">
+            <div class="container">
+                <div class="achievement-content">
+                    <div class="achievement-badge">🏆</div>
+                    <h2>You're a Wildlife Hero!</h2>
+                    <p id="achievementText">Keep doing these tips to help animals!</p>
+                    <div class="achievement-stars" id="achievementStars">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">British Wildlife Centre</h3>
+                    <p>Dedicated to protecting and conserving Britain's native wildlife.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="animals.html">Animals</a></li>
+                        <li><a href="map.html">Map</a></li>
+                        <li><a href="tips.html">Tips</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact</h3>
+                    <ul class="footer-links">
+                        <li>📧 info@wildlifecentre.uk</li>
+                        <li>📞 01234 567890</li>
+                        <li>📍 Wildlife Centre, UK</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 British Wildlife Centre. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bottom Navigation (Mobile) -->
+    <nav class="bottom-nav" id="bottomNav">
+        <a href="index.html" class="bottom-nav-item">
+            <span class="nav-icon">🏠</span>
+            <span class="nav-label">Home</span>
+        </a>
+        <a href="animals.html" class="bottom-nav-item">
+            <span class="nav-icon">🦊</span>
+            <span class="nav-label">Animals</span>
+        </a>
+        <a href="map.html" class="bottom-nav-item">
+            <span class="nav-icon">🗺️</span>
+            <span class="nav-label">Map</span>
+        </a>
+        <a href="tips.html" class="bottom-nav-item active" aria-current="page">
+            <span class="nav-icon">💡</span>
+            <span class="nav-label">Tips</span>
+        </a>
+        <a href="favourites.html" class="bottom-nav-item">
+            <span class="nav-icon">⭐</span>
+            <span class="nav-label">Faves</span>
+        </a>
+    </nav>
+
+    <!-- Scripts -->
+    <script src="js/app.js" type="module"></script>
+    <script src="js/theme.js" type="module"></script>
+    <script src="js/network-status.js" type="module"></script>
+    <script src="js/tips-page.js" type="module"></script>
+</body>
+</html>

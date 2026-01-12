@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive map showing British wildlife locations">
+    <meta name="theme-color" content="#2d5016">
+    
+    <title>Wildlife Map - British Wildlife Centre</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/icons/favicon.png">
+    <link rel="apple-touch-icon" href="images/icons/icon-192.png">
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/map.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="images/logo.svg" alt="British Wildlife Centre Logo" class="logo-img">
+                    <h1 class="site-title">British Wildlife Centre</h1>
+                </div>
+                
+                <div class="header-actions">
+                    <!-- Theme Toggle -->
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                        <span class="theme-icon theme-icon-light">☀️</span>
+                        <span class="theme-icon theme-icon-dark">🌙</span>
+                    </button>
+                    
+                    <!-- Network Status -->
+                    <div class="network-status" id="networkStatus">
+                        <span class="status-indicator"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Navigation (Desktop/Tablet) -->
+    <nav class="main-nav" id="mainNav">
+        <div class="container">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <span class="nav-icon">🏠</span>
+                        <span class="nav-text">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="animals.html" class="nav-link">
+                        <span class="nav-icon">🦊</span>
+                        <span class="nav-text">Animals</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="map.html" class="nav-link active" aria-current="page">
+                        <span class="nav-icon">🗺️</span>
+                        <span class="nav-text">Map</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="tips.html" class="nav-link">
+                        <span class="nav-icon">💡</span>
+                        <span class="nav-text">Tips</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="favourites.html" class="nav-link">
+                        <span class="nav-icon">⭐</span>
+                        <span class="nav-text">Favourites</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Map Controls -->
+        <div class="map-controls">
+            <div class="container">
+                <button class="btn btn-primary" id="locateBtn">
+                    <span>📍</span>
+                    <span>Find My Location</span>
+                </button>
+                
+                <div class="map-legend">
+                    <span class="legend-item">
+                        <span class="legend-marker endangered"></span>
+                        <span>Endangered</span>
+                    </span>
+                    <span class="legend-item">
+                        <span class="legend-marker vulnerable"></span>
+                        <span>Vulnerable</span>
+                    </span>
+                    <span class="legend-item">
+                        <span class="legend-marker stable"></span>
+                        <span>Stable</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Map Container -->
+        <div id="map" class="map-container"></div>
+
+        <!-- Animal List Sidebar -->
+        <div class="map-sidebar">
+            <div class="sidebar-content">
+                <h2 class="sidebar-title">Wildlife Locations</h2>
+                <div class="sidebar-list" id="animalList">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bottom Navigation (Mobile) -->
+    <nav class="bottom-nav" id="bottomNav">
+        <a href="index.html" class="bottom-nav-item">
+            <span class="nav-icon">🏠</span>
+            <span class="nav-label">Home</span>
+        </a>
+        <a href="animals.html" class="bottom-nav-item">
+            <span class="nav-icon">🦊</span>
+            <span class="nav-label">Animals</span>
+        </a>
+        <a href="map.html" class="bottom-nav-item active" aria-current="page">
+            <span class="nav-icon">🗺️</span>
+            <span class="nav-label">Map</span>
+        </a>
+        <a href="tips.html" class="bottom-nav-item">
+            <span class="nav-icon">💡</span>
+            <span class="nav-label">Tips</span>
+        </a>
+        <a href="favourites.html" class="bottom-nav-item">
+            <span class="nav-icon">⭐</span>
+            <span class="nav-label">Faves</span>
+        </a>
+    </nav>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <!-- Scripts -->
+    <script src="js/app.js" type="module"></script>
+    <script src="js/theme.js" type="module"></script>
+    <script src="js/network-status.js" type="module"></script>
+    <script src="js/map-page.js" type="module"></script>
+</body>
+</html>

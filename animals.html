@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse all British wildlife species at our centre">
+    <meta name="theme-color" content="#2d5016">
+    
+    <title>Animals - British Wildlife Centre</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/icons/favicon.png">
+    <link rel="apple-touch-icon" href="images/icons/icon-192.png">
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/animals.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="images/logo.svg" alt="British Wildlife Centre Logo" class="logo-img">
+                    <h1 class="site-title">British Wildlife Centre</h1>
+                </div>
+                
+                <div class="header-actions">
+                    <!-- Theme Toggle -->
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                        <span class="theme-icon theme-icon-light">☀️</span>
+                        <span class="theme-icon theme-icon-dark">🌙</span>
+                    </button>
+                    
+                    <!-- Network Status -->
+                    <div class="network-status" id="networkStatus">
+                        <span class="status-indicator"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Navigation (Desktop/Tablet) -->
+    <nav class="main-nav" id="mainNav">
+        <div class="container">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <span class="nav-icon">🏠</span>
+                        <span class="nav-text">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="animals.html" class="nav-link active" aria-current="page">
+                        <span class="nav-icon">🦊</span>
+                        <span class="nav-text">Animals</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="map.html" class="nav-link">
+                        <span class="nav-icon">🗺️</span>
+                        <span class="nav-text">Map</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="tips.html" class="nav-link">
+                        <span class="nav-icon">💡</span>
+                        <span class="nav-text">Tips</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="favourites.html" class="nav-link">
+                        <span class="nav-icon">⭐</span>
+                        <span class="nav-text">Favourites</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">British Wildlife</h1>
+                <p class="page-subtitle">Discover our amazing native species</p>
+            </div>
+        </section>
+
+        <!-- Search & Filter Section -->
+        <section class="filter-section">
+            <div class="container">
+                <div class="filter-controls">
+                    <!-- Search Bar -->
+                    <div class="search-box">
+                        <input 
+                            type="search" 
+                            id="searchInput" 
+                            class="search-input" 
+                            placeholder="Search animals..."
+                            aria-label="Search animals"
+                        >
+                        <span class="search-icon">🔍</span>
+                    </div>
+
+                    <!-- Filter Buttons -->
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">
+                            All <span class="badge" id="countAll">0</span>
+                        </button>
+                        <button class="filter-btn" data-filter="high">
+                            Endangered <span class="badge" id="countHigh">0</span>
+                        </button>
+                        <button class="filter-btn" data-filter="medium">
+                            Vulnerable <span class="badge" id="countMedium">0</span>
+                        </button>
+                        <button class="filter-btn" data-filter="low">
+                            Stable <span class="badge" id="countLow">0</span>
+                        </button>
+                    </div>
+
+                    <!-- Sort Dropdown -->
+                    <div class="sort-box">
+                        <label for="sortSelect" class="sr-only">Sort by</label>
+                        <select id="sortSelect" class="sort-select">
+                            <option value="name-asc">Name (A-Z)</option>
+                            <option value="name-desc">Name (Z-A)</option>
+                            <option value="endangered-high">Most Endangered First</option>
+                            <option value="endangered-low">Least Endangered First</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Active Filters Display -->
+                <div class="active-filters" id="activeFilters">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Animals Grid -->
+        <section class="animals-section section">
+            <div class="container">
+                <div class="animals-grid" id="animalsGrid">
+                    <!-- Populated by JavaScript -->
+                </div>
+
+                <!-- No Results Message -->
+                <div class="no-results hidden" id="noResults">
+                    <div class="no-results-content">
+                        <span class="no-results-icon">🔍</span>
+                        <h3>No animals found</h3>
+                        <p>Try adjusting your search or filters</p>
+                        <button class="btn btn-primary" onclick="clearFilters()">Clear Filters</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">British Wildlife Centre</h3>
+                    <p>Dedicated to protecting and conserving Britain's native wildlife.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="animals.html">Animals</a></li>
+                        <li><a href="map.html">Map</a></li>
+                        <li><a href="tips.html">Tips</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact</h3>
+                    <ul class="footer-links">
+                        <li>📧 info@wildlifecentre.uk</li>
+                        <li>📞 01234 567890</li>
+                        <li>📍 Wildlife Centre, UK</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 British Wildlife Centre. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bottom Navigation (Mobile) -->
+    <nav class="bottom-nav" id="bottomNav">
+        <a href="index.html" class="bottom-nav-item">
+            <span class="nav-icon">🏠</span>
+            <span class="nav-label">Home</span>
+        </a>
+        <a href="animals.html" class="bottom-nav-item active" aria-current="page">
+            <span class="nav-icon">🦊</span>
+            <span class="nav-label">Animals</span>
+        </a>
+        <a href="map.html" class="bottom-nav-item">
+            <span class="nav-icon">🗺️</span>
+            <span class="nav-label">Map</span>
+        </a>
+        <a href="tips.html" class="bottom-nav-item">
+            <span class="nav-icon">💡</span>
+            <span class="nav-label">Tips</span>
+        </a>
+        <a href="favourites.html" class="bottom-nav-item">
+            <span class="nav-icon">⭐</span>
+            <span class="nav-label">Faves</span>
+        </a>
+    </nav>
+
+    <!-- Scripts -->
+    <script src="js/app.js" type="module"></script>
+    <script src="js/theme.js" type="module"></script>
+    <script src="js/network-status.js" type="module"></script>
+    <script src="js/animals-page.js" type="module"></script>
+</body>
+</html>
